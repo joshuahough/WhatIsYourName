@@ -16,13 +16,12 @@ namespace FirstConsoleApp
             //Console.ReadKey();
 
             // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
-
-            Console.WriteLine(vbCrLf + "What is your name? ")
-            Dim name = Console.ReadLine()
-            Dim currentDate = DateTime.Now
-            Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}")
-            Console.Write(vbCrLf + "Press any key to exit... ")
-            Console.ReadKey(True)
+            Console.WriteLine("What is your name? ");
+            var name = Console.ReadLine();
+            var currentDate = DateTime.Now;
+            Console.WriteLine($"Hello, {name}, on {currentDate:d} at {currentDate:t}");
+            Console.Write("Press any key to exit... ");
+            Console.ReadKey(true);
         }
     }
 }
